@@ -26,7 +26,7 @@ class ErrorHandler
     {
         extract($args);
 
-        $fileName = \is_file(\dirname(__DIR__) . '/Error/Rendering/' . $fileName) ? \dirname(__DIR__) . '/Error/Rendering/' . $fileName : $fileName;
+        $fileName = \is_file(\dirname(__DIR__) . '/error-handler/Rendering/' . $fileName) ? \dirname(__DIR__) . '/error-handler/Rendering/' . $fileName : $fileName;
         include $fileName;
     }
 }
