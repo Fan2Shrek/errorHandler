@@ -14,7 +14,7 @@ class ErrorHandler
 
     public function handleException(\Throwable $exception)
     {
-        $this->render('views/exception.html.php', ['message' => $exception->getMessage(), 'trace' => $exception->getTrace()]);
+        $this->render('views/exception.html.php', ['message' => $exception->getMessage(), 'file' => $exception->getFile(), 'line' => $exception->getLine(), 'trace' => $exception->getTrace()]);
     }
 
     public function handleError(int $errno, string $errstr, string $errfile = null, int $errline = null)

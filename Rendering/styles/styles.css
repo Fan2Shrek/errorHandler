@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #trace-container {
@@ -16,6 +18,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+h4{
+    margin-bottom: 20px;
 }
 
 h3 {

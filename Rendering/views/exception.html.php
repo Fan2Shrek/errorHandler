@@ -10,6 +10,7 @@
 
 <body>
     <div id='header'>
+        <h4><?= $file . ':' . $line ?></h4>
         <h2><?= $message ?> </h2>
     </div>
     <div id='trace-container'>
