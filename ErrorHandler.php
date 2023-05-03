@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Error;
+namespace Sruuua\Error;
 
 class ErrorHandler
 {
